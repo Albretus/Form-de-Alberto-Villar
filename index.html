@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Alberto Villar formulario</title>
+</head>
+<body background="fondo.jpg">
+     <div id="contenedor">
+        <h1>IFP Supermercado electrónico</h1>
+        
+        <div class="item item1">
+            <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset>
+                <legend>Busca tu producto electrónico</legend>
+                <label id="mar">Marca:</label><br>
+                <input id="marca" type="text" name="nombre"><br>
+
+                <label id="tip">Tipo de producto:</label><br>
+                <input type="text" id="tipo" name="type"><br>
+            
+                <h3>Estado del producto</h3>
+                <!--Paso 3. Crear el evento. En el caso de las listas es mejor este, onclick no surtiría efecto. más info: https://stackoverflow.com/questions/21029907/does-the-javascript-onclick-event-not-work-on-select-options-->
+                <select name="estado" id="estado">
+                    <option value="1">Nuevo</option>
+                    <option value="2">Seminuevo</option>
+                    <option value="3">Usado</option>
+                </select>
+
+                
+            </fieldset>
+        </form><input type="button" value="Guardar" id="btn" onclick="anadir()">
+        <input type="button" value="Borrar" id="btn" onclick="borrar()">
+    </div>
+    <div class="item item2">
+    <p id="resultado"></p>
+</div>
+
+    <div class="item item3">
+        <img src="gif.gif">
+    </div></div>
+</body>
+</html>

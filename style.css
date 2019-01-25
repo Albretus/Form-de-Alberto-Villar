@@ -1,0 +1,34 @@
+*{
+	padding: 0%;
+	margin: 0%;
+	background-size: cover ;
+}
+#familia > * {
+	display:block;
+	}
+	fieldset{
+		width:200px;
+	}
+
+#contenedor{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.item{
+
+}
+.item1{
+	grid-row-start:2;
+	grid-column-start: 1; 
+	margin-left: 10px;
+}
+.item2{
+	grid-row-start:3;
+	grid-column-start: 1; 
+}
+.item3{
+	grid-row-start:1;
+	grid-column-start: 3; 
+	margin-top: 10px;
+}
